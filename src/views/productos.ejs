@@ -7,8 +7,8 @@
     <div class="content">
         <h1>Productos</h1>
         <form class="search">
-            <input type="text" id="buscar" placeholder="Buscar">
-            <button class="buscar">Buscar</button>
+            <input type="text" id="txt_buscar" placeholder="Buscar">
+            <button class="buscar" id="btn_buscar">Buscar</button>
         </form>
 
         <% if(productos.length > 0){ %>
@@ -26,7 +26,7 @@
             <% }) %>
         <% } %>
 
-        <div class="card">
+        <!-- <div class="card">
             <h2>Producto</h2>
             <div class="info">
                 <p>Proveedor:</p>
@@ -35,8 +35,15 @@
                 <p>Esta es la descripción del producto</p>
             </div>
             <h3>$ 123.45 MXN</h3>
-        </div>
+        </div> -->
     </div>
     <%- include('./templates/footer') %>
+    <script>
+        const txtBus = document.querySelector('#txt_buscar');
+        const btnBus = document.querySelector('#btn_buscar');
+        btnBus.addEventListener('click',() => {
+            window.location.href = "/productos";
+        });
+    </script>
 </body>
 </html>
