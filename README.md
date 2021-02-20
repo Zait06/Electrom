@@ -10,3 +10,9 @@ La base de datos está hecha con un archivo XML, donde se guardan datos como:
 - Precio
 
 Quien esté buscando algún producto, podrá contactar al vendedor para ponerse de acuerdo.
+
+### Instalacion de paquetes
+`npm install`
+
+### Correr proyecto
+`npm run dev`
