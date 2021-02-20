@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./templates/head', {titulo: 'Pagina de inicio'}) %>
+<body>
+    <%- include('./templates/navbar') %>
+    <%- include('./templates/loader') %>
+    <div class="content">
+        <h1>Productos</h1>
+        <form class="search">
+            <input type="text" id="buscar" placeholder="Buscar">
+            <button class="buscar">Buscar</button>
+        </form>
+
+        <% if(productos.length > 0){ %>
+            <% productos.forEach(producto => { %>
+                <div class="card">
+                    <h2><%= producto.nomProduc %></h2>
+                    <div class="info">
+                        <p>Proveedor: <%= producto.nombre %></p>
+                        <p>Contacto: <%= producto.email %></p>
+                        <h4 class="descripcion">Descripción</h4>
+                        <p><%= producto.descripcion %></p>
+                    </div>
+                    <h3>$ <%= producto.precio %> MXN</h3>
+                </div>
+            <% }) %>
+        <% } %>
+
+        <div class="card">
+            <h2>Producto</h2>
+            <div class="info">
+                <p>Proveedor:</p>
+                <p>Contacto: correo</p>
+                <h4 class="descripcion">Descripción</h4>
+                <p>Esta es la descripción del producto</p>
+            </div>
+            <h3>$ 123.45 MXN</h3>
+        </div>
+    </div>
+    <%- include('./templates/footer') %>
+</body>
+</html>

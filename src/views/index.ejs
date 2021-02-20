@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./templates/head', {titulo: 'Pagina de inicio'}) %>
+<body>
+    <%- include('./templates/loader') %>
+    <div class="hero">
+        <h1>Bienvenido a Electrom</h1>
+        <h2>Dispositivos y material electrónico</h2>
+        <h3>¿Qué desea hacer?</h3>
+        <br>
+        <button class="button" id="btn_busqueda">Buscar producto</button>
+        <button class="button" id="btn_registro">Registrar producto</button>
+    </div>
+    <%- include('./templates/footer') %>
+    <script>
+        const btnBus = document.querySelector('#btn_busqueda');
+        btnBus.addEventListener('click',() => {
+            window.location.href = "/productos";
+        });
+        const btnReg = document.querySelector('#btn_registro');
+        btnReg.addEventListener('click',() => {
+            window.location.href = "/registrar";
+        });
+    </script>
+</body>
+</html>

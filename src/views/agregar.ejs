@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./templates/head', {titulo: 'Registrar producto'}) %>
+<body>
+    <%- include('./templates/loader') %>
+    <%- include('./templates/navbar') %>
+    <div class="content">
+        <h1>Registro</h1>
+        <form action="/registrar" method="POST" id="form">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Angel Pérez" required><br><br>
+
+            <label for="numBoleta">Número de boleta:</label><br>
+            <input type="password" id="numBoleta" name="numBoleta" placeholder="Ej. 2014202008" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Ej. angel@ejemplo.com" required><br><br>
+
+            <label for="nomProduc">Nombre del producto:</label><br>
+            <input type="text" id="nomProduc" name="nomProduc" placeholder="Ej. Match OX" required><br><br>
+
+            <label for="precio">Precio:</label><br>
+            <input type="text" id="precio" name="precio" placeholder="Ej. 550.50" required> MXN<br><br>
+
+            <label for="descripcion">Descripción:</label><br><br>
+            <textarea name="descripcion"  id="descripcion" placeholder="Ej. Detalle en la placa"></textarea>
+            <br><br>
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+    <%- include('./templates/footer') %>
+</body>
+</html>

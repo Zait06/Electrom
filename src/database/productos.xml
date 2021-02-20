@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<productos>
+  <producto>
+    <nombre>Zait</nombre>
+    <numBoleta>2014080682</numBoleta>
+    <email>zait.hdez@gmail.com</email>
+    <nomProduc>Cautin Truper</nomProduc>
+    <precio>150</precio>
+    <descripcion>Ninguna</descripcion>
+  </producto>
+  <producto>
+    <nombre>Gloria</nombre>
+    <numBoleta>2020080682</numBoleta>
+    <email>gloria@gmail.com</email>
+    <nomProduc>Multimetro</nomProduc>
+    <precio>100</precio>
+    <descripcion>No tiene una punta</descripcion>
+  </producto>
+  <producto>
+    <nombre>Zait</nombre>
+    <numBoleta>2014080682</numBoleta>
+    <email>zait.hdez@gmail.com</email>
+    <nomProduc>Calculadora</nomProduc>
+    <precio>150</precio>
+    <descripcion>No tiene el número 3</descripcion>
+  </producto>
+  <producto>
+    <nombre>Tenoch</nombre>
+    <numBoleta>2014080682</numBoleta>
+    <email>zait.hdz@gmail.com</email>
+    <nomProduc>Croquetas</nomProduc>
+    <precio>15.50</precio>
+    <descripcion>Saben ricas</descripcion>
+  </producto>
+</productos>

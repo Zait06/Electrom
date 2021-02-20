@@ -1,0 +1,245 @@
+body {margin: 0;}
+
+.hero{
+    text-align: center;
+    background-color: #026294;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+button{
+    border-radius: 5em;
+    border-color: none;
+    color: black;
+    background-color: white;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+button.del:hover{
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+button.edit:hover{
+    color: black;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=password]{
+    border: none;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid #026294;
+    transition: 0.5s;
+}
+
+input[type=number]{
+    text-align: right !important;
+    width: 15% !important;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #026294;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5em;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text]:focus, input[type=number]:focus, input[type=email]:focus, input[type=password]:focus{
+    outline: none !important;
+    border-bottom: 3px solid #026294;
+}
+
+textarea {
+    width: 50%;
+    height: 10em;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1.5px solid #026294;
+    border-radius: 4px;
+    resize: none;
+    transition: 0.5s;
+}
+
+textarea:focus{
+    outline: none !important;
+    border: 3px solid #026294;
+}
+
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    background-color: #026294;
+}
+
+.navbar li {
+    float: left;
+    color: white;
+}
+
+.navbar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.content{
+    padding: 3em;
+}
+
+.card{
+    width: 30%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 0.2em solid #026294;
+    float: left;
+    box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+    border-radius: 2em;
+    margin: 1em;
+}
+
+.card:hover { 
+    box-shadow: 0 1.5em 2.5em 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.card .info{
+    padding: 0.5em;
+    border-top: 0.2em solid #026294 !important;
+    text-align: justify;
+}
+
+.card .info .descripcion{
+    text-align: center;
+}
+
+#buscar{
+    border: none;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid #026294;
+    transition: 1s;
+}
+
+#buscar:focus{
+    width: 80%;
+    border-bottom: 3px solid #026294;
+}
+
+@media screen and (max-width: 400px) {
+    .navbar li {
+        float: none;
+        color: white;
+    }
+
+    .navbar li a {
+        text-align: center;
+        float: none;
+    }
+
+    .content{
+        padding-top: 5em;
+
+    }
+
+    input{
+        width: 100% !important;
+    }
+
+    input[type=number]{
+        width: 50% !important;
+    }
+
+    textarea{
+        width: 100%;
+    }
+}
+
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loader{
+    width: 3em;
+    height: 3em;
+    border: 0.25em solid;
+    color: #3498db;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loading 1.2s linear infinite;
+}
+
+@keyframes loading{
+    25%{
+        color: #2ecc71;
+    }
+    50%{
+        color: #f1c40f;
+    }
+    75%{
+        color: #e74c3c;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.buscar{
+    width: 10%;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    text-align: center;
+    margin: 5em;
+    padding: 1em 1em;
+    border-bottom: 2px solid #026294;
+    width: 33.33%;
+}
